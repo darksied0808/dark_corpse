@@ -1,0 +1,62 @@
+<html>
+<body>
+<title><my caliculator></title>
+<style>
+.b
+{
+backgroundcolor:brown;
+color:yellow;
+padding:30px;
+text-align:center;
+font-size:5px;
+}
+.t
+{
+fontsize:5px;
+}
+</style>
+<script="logic.js">
+<tr>
+<td align="center"><cellspacing=10px><cellpadding=10px></td>
+<td align="center"><onclick=ac(' ')>AC</td>
+</tr>
+<tr>
+<td align="center"><onclick="show"('1')>1</td>
+<td align="center"><onclick="show"('2')>2</td>
+<td align="center"><onclick="show"('3')>3</td>
+<td align="center"><onclick="show"('+')>+</td>
+</tr>
+<tr>
+<td align="center"><onclick="show"('4')>4</td>
+<td align="center"><onclick="show"('5')>5</td>
+<td align="center"><onclick="show"('6')>6</td>
+<td align="center"><onclick="show"('-')>-</td>
+</tr>
+<tr>
+<td align="center"><onclick="show"('7')>7</td>
+<td align="center"><onclick="show"('8')>8</td>
+<td align="center"><onclick="show"('9')>9</td>
+<td align="center"><onclick="show"('*')>*</td>
+</tr>
+<tr>
+<td align="center"><onclick="show"('0')>0</td>
+<td align="center"><onclick="show"('/')>/</td>
+<td align="center"><onclick="show"('%')>%</td>
+<td align="center"><onclick="show"('=')>=</td>
+<td align="center"><onclick="show" cal(' ')>cal</td>
+</tr>
+</script>
+</body>
+</html>
+function AC()
+{
+document.getElementByid('res')."VALUE"=" ";
+}
+function show(output)
+{
+document.getElementByid('res').+="VALUE";
+}
+function cal()
+{
+document.getElementByid('res')."VALUE";
+}
